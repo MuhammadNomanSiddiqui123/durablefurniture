@@ -1,0 +1,438 @@
+:root {
+    --primary-color: #2C5F6D;
+    --secondary-color: #D4AF37;
+    --bg-light: #FFFFFF;
+    --bg-soft: #FBFBFB;
+    --text-dark: #333333;
+    --text-light: #FFFFFF;
+    --transition: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+.top-nav {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    max-width: 100%;
+} */
+
+/* LOGO SIZE FIX - Isko dhayan se dekhein */
+/* .main-logo {
+    height: 100px;       
+    width: 300px;        
+    object-fit: contain; 
+    display: block;
+    margin-top: 20px;
+} */
+ /* noman */
+.main-logo {
+    max-width: 180px;
+    height: auto;
+}
+/* SEARCH BAR STYLING */
+.search-container {
+    display: flex;
+    background: white;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    padding: 6px;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 100%;
+}
+.search-container input {
+    /* border-radius: 20px; */
+    padding: 8px 15px;
+    outline: none;
+
+        width: 100%;
+    max-width: 400px;
+}
+.ban_img{
+    width: 100%;
+}
+.search-container button {
+    background: var(--secondary-color);
+    /* border-radius: 20px; */
+    padding: 8px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.account-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+.account-links a {
+    text-decoration: none;
+    color: var(--text-light); 
+    font-weight: 500;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.account-links a:hover {
+    color: var(--secondary-color); 
+}
+
+
+.signup-btn {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-dark) !important; 
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.form {
+    padding-right: 20px;
+    margin-right: 0;
+    width: 50%; 
+}
+.signup-btn {
+    background-color: var(--primary-color);
+    color: white !important;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+/* --- SECOND NAVBAR FIX --- */
+#second-nav {
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+    justify-content: center;
+    border-bottom:1px solid #ddd;
+    background-color: var(--secondary-color);
+
+}
+#second-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+}
+#second-nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+ .items:hover{
+    background-color: var(--primary-color);
+    color: var(--bg-light)!important;
+    border-radius: 20px;
+    cursor: pointer;
+ }
+/* 1. Navbar ki qaid se dropdown ko azad karein */
+#second-nav {
+    overflow: visible !important; 
+    position: relative;
+    z-index: 1000; /* Taake ye baki content ke upar rahe */
+}
+
+#second-nav .container-fluid, 
+#second-nav .collapse, 
+#second-nav .navbar-nav {
+    overflow: visible !important;
+}
+
+/* 2. Dropdown menu ko hawa mein (absolute) set karein */
+.dropdown-menu {
+    position: absolute !important;
+    top: 100%; /* Navbar ke bilkul niche */
+    left: 0;
+    z-index: 9999 !important;
+    margin-top: 0; 
+    display: none;
+}
+.down:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 20px;
+}
+/* Pehle menu ko chhupao */
+.dropdown-menu {
+    display: none !important;
+}
+
+/* Jab click ho aur 'show' class aaye, tab dikhao */
+.dropdown-menu.show {
+    display: block !important;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.dropdown-menu.show:hover{
+    color: var(--text-dark);
+    background-color: var(--secondary-color);
+}
+
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* MINDSET */
+.mindset {
+  background-color: #f5f5f5;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+.mindset h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #2c5f6d;
+}
+
+.mindset p {
+  color: black;
+  line-height: 1.8;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #000;
+}
+
+/* STATS */
+.stats {
+   background-color: #2c5f6d;
+  color: #FFFFFF;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.stats h3 {
+  font-weight: bold;
+  background-color: #2c5f6d;
+}
+
+/* WHY */
+.why h3 {
+  color: rgb(10, 10, 10);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* SECTION */
+.about-extra {
+  padding: 50px 0;
+}
+
+/* ROW GAP */
+.custom-row {
+  margin-bottom: 50px;
+}
+
+/* IMAGE SIZE CONTROL */
+.custom-img {
+  width: 100%;
+  max-height: 350px; /* image zyada badi nahi hogi */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.custom-heading {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2c5f6d;
+  margin-bottom: 10px;
+}
+
+.custom-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* GAP BETWEEN IMAGE & TEXT */
+.col-lg-6 {
+  padding: 15px;
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+  .custom-img {
+    margin-bottom: 15px;
+  }
+
+  .custom-heading,
+  .custom-text {
+    text-align: center;
+  }
+
+  .custom-row {
+    margin-bottom: 30px;
+  }
+}
+
+.about-top {
+  width: 100%;
+  height: 200px;
+  background: #2c5f6d; /* simple background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.about-top-text h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.about-top-text p {
+  color: #ddd;
+  font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-top {
+    height: 200px;
+  }
+
+  .about-top-text h1 {
+    font-size: 30px;
+  }
+
+  .about-top-text p {
+    font-size: 18px;
+  }
+}
+
+.map-section {
+  padding: 50px 0;
+}
+
+.map-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c5f6d;
+}
+
+/* MAP BOX */
+.map-container {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* IFRAME FULL FIT */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;
+  }
+}
+
+/* Custom Footer Styling */
+.footer-section {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.footer-logo {
+    color: #ffc107; /* Bootstrap Warning/Gold Color */
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.footer-link {
+    color: var(--bg-light);
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-link:hover {
+    color: var(--secondary-color)!important;
+    padding-left: 5px; /* Subtle movement effect */
+}
+
+.thanks-heading {
+    color: var(--secondary-color);
+}
+.text-uppercase{
+    color: var(--secondary-color);
+}
+
+/* Social Icons Styling */
+.social-icons a {
+    color: var(--bg-light);
+    font-size: 1.2rem;
+    transition: 0.4s;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px); /* Hover par thoda upar jayega */
+}
+
+.copyright-text {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.border-top {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-nav {
+    background-color: #2D5F6E;
+}
+
+/* LOGO */
+.main-logo {
+    height: 80px;
+}
+
+/* SEARCH */
+.search-container {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-container input {
+    border: none;
+    padding: 8px;
+    width: 220px;
+}
+
+.search-container button {
+    background: orange;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+}
+
+/* ACCOUNT */
+.account-links ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.account-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SECOND NAV */
+#second-nav {
+    background: orange;
+}
+
+#second-nav .nav-link {
+    color: black;
+}
+
+/* CONTACT */
+.contact-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+
+/* BUTTON */
+.send-btn {
+    background: #2D5F6E;
+    color: white;
+}
+
+.send-btn:hover {
+    background:  #D4AF37;
+
+}
+
+/* ICON */
+.icon {
+    color: #2D5F6E;
+}
+
+
+#mobileSearch {
+    background: white;
+    z-index: 1000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .top-nav .container-fluid {
+        flex-direction: column;
+    }
+
+    .contact-box {
+        margin-left: 0;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}

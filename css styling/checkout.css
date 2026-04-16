@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #2C5F6D;
+    --secondary-color: #D4AF37;
+    --bg-light: #FFFFFF;
+    --bg-soft: #FBFBFB;
+    --text-dark: #333333;
+    --text-light: #FFFFFF;
+    --transition: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+        
+body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }                                                                               
+
+        .checkout-container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .custom-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-top: 6px solid var(--primary-color); /* Theme Color */
+        }
+
+        .form-heading {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+       
+        .my-input-field {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            outline: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .my-input-field:focus {
+            border-color: var(--primary-color);
+            background-color: #fffdf5;
+        }
+#custPayment{
+    background-color: var(--primary-color);
+    color: var(--bg-soft);
+    cursor: pointer;
+}
+#custPayment:hover{
+     background-color: var(--secondary-color);
+     color: var(--text-dark);
+     cursor: pointer;
+}
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            color: #555;
+        }
+
+        
+        .order-btn {
+            background-color:var(--primary-color);
+            color: var(--bg-soft);
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s;
+            text-transform: uppercase;
+        }
+
+        .order-btn:hover {
+            background-color: var(--secondary-color);
+            color:var(--text-dark);
+            letter-spacing: 1px;
+        }
